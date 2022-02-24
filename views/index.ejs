@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/digifianz-logo-circle.png" type="image/x-icon" />
+
+  <!-- Styles sheets -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Page Title -->
+  <title>Digifianz's technical test</title>
+</head>
+
+<body>
+  <!-- Confirmación de envío de mensaje -->
+  <div id="capa">
+    <div class="contenedor-flex-ventana-confirmacion">
+      <div class="ventana-mensaje">
+        <div class="title">¡Tu mensaje será enviado inmediatamente!
+          <p class="title2">Al finalizar se te redirigirá al inicio del sitio</p>
+        </div>
+        <div class="buttons">
+          <input type="button" class="button" value="Aceptar" id="ok">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- Navbar -->
+  <div class="capa-opaca-oculta"></div>
+  <nav>
+    <div class="contenedor-flex-nav-items">
+      <div class="logo"></div>
+      <div class="nav-options">
+        <div class="contenedor-ul">
+          <div class="btn-cierre-menu"></div>
+          <ul>
+            <a href="#item-menu-1" class="a-option">
+              <li>Item menu 1</li>
+            </a>
+            <a href="#item-menu-2" class="a-option">
+              <li>Item menu 2</li>
+            </a>
+            <a href="#item-menu-3" class="a-option">
+              <li>Item menu 3</li>
+            </a>
+            <button class="btn-sm">Button text</button>
+            <button class="btn-lg">¡Hacé click aquí!</button>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-hamb"></div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <div class="texto-header">
+        <h1>Bienvenid@ al test de aptitudes técnicas de Digifianz</h1>
+      </div>
+    </div>
+    <!-- <img id="img-sm" src="./assets/Hero-background-sm.png" alt="imagen de fondo Digifianz" />
+    <img id="img-lg" src="./assets/Hero-background.jpg" alt="imagen de fondo Digifianz" /> -->
+  </header>
+
+  <!-- Section cards -->
+  <div class="section-cards" id="item-menu-1">
+    <div class="contenedor-cards">
+      <div class="card">
+        <div class="card-img" id="img-card-1"></div>
+        <div class="text-card">
+          <p>Hacé este ejercicio</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" id="img-card-2"></div>
+        <div class="text-card">
+          <p>Lo evaluaremos con nuestro equipo</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" id="img-card-3"></div>
+        <div class="text-card">
+          <p>Te sumás al equipo de Digifanz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section main -->
+  <div class="contenedor-main" id="item-menu-2">
+    <div class="contenedor-items-main">
+      <div class="img-main"></div>
+      <div class="main-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
+          lorem eget tellus vehicula dignissim. Cras ac ex a odio faucibus
+          fermentum. Cras gravida urna eget nunc pellentesque, et lobortis
+          sapien maximus. Nulla interdum ex lorem, non porta urna pharetra ac.
+          Nulla risus nisl, dictum vitae volutpat sed, egestas ut nulla. In
+          sagittis ante odio.
+        </p>
+        <p>
+          Praesent sit amet nibh aliquam, molestie ipsum non, volutpat nisl.
+          Phasellus a eleifend libero. Sed imperdiet, elit quis porttitor
+          ullamcorper, purus justo malesuada tortor, at pretium est ipsum in
+          velit. Suspendisse id aliquam sem. Proin non diam ligula.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de contacto -->
+  <div class="contenedor-form" id="item-menu-3">
+    <p>Formulario</p>
+    <form method="post" action="/contacto" class="form-contacto" id="form-de-contacto">
+      <div class="contenedor-grid-form">
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="Nombre" name="nombre" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="Apellido" name="apellido" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="email" placeholder="Correo electrónico" name="email" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="Nombre de la institución" name="organization" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="number" placeholder="N° de teléfono" name="telefono" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="País" name="pais" autocomplete="on" required />
+        </div>
+      </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Formulario de contacto oculto -->
+  <div class="contenedor-form-hidden">
+    <div class="cruz-cierre-form"></div>
+    <p>Formulario</p>
+    <form method="post" action="/contacto" class="form-contacto" id="form-de-contacto">
+      <div class="contenedor-grid-form">
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="Nombre" name="nombre" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input class="input" type="text" placeholder="Apellido" name="apellido" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="email" placeholder="Correo electrónico" name="email" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="Nombre de la institución" name="organization" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="number" placeholder="N° de teléfono" name="telefono" autocomplete="on" required />
+        </div>
+        <div class="item-form">
+          <span class="required-star">*</span>
+          <input type="text" placeholder="País" name="pais" autocomplete="on" required />
+        </div>
+      </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.digifianz.com/es/" rel="noreferrer noopener" target="_blank">
+      <div class="img-footer"></div>
+    </a>
+  </footer>
+  <!-- scripts -->
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

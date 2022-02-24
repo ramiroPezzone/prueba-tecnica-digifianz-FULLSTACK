@@ -1,0 +1,25 @@
+{
+  "name": "prueba-tecnica-digifianz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramiroPezzone/prueba-tecnica-digifianz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramiroPezzone/prueba-tecnica-digifianz/issues"
+  },
+  "homepage": "https://github.com/ramiroPezzone/prueba-tecnica-digifianz#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemailer": "^6.7.2"
+  }
+}
