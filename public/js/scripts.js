@@ -1,6 +1,9 @@
 const todoElDocumento = document.querySelector("*");
 const capaOpaca = document.querySelector(".capa-opaca-oculta");
 
+const dateNow = new Date().toLocaleString();
+console.log(dateNow);
+
 // Despliegue/ocultamiento menú oculto
 if (document.querySelector(".menu-hamb")) {
   const btnMenuHamb = document.querySelector(".menu-hamb");
