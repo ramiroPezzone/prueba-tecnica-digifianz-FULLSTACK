@@ -31,7 +31,7 @@ if (document.querySelector(".menu-hamb")) {
 }
 
 // Form oculto
-if (document.querySelector(".contenedor-form-hidden")) {
+if (document.querySelector(".contenedor-form")) {
   const btnLg = document.querySelector(".btn-lg");
   const form = document.querySelector(".contenedor-form");
   const cruzCierreForm = document.querySelector(".cruz-cierre-form-hidden");
