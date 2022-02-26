@@ -33,17 +33,17 @@ if (document.querySelector(".menu-hamb")) {
 // Form oculto
 if (document.querySelector(".contenedor-form-hidden")) {
   const btnLg = document.querySelector(".btn-lg");
-  const formOculto = document.querySelector(".contenedor-form-hidden");
+  const form = document.querySelector(".contenedor-form");
   const cruzCierreForm = document.querySelector(".cruz-cierre-form");
 
   btnLg.addEventListener("click", () => {
-    formOculto.classList.add("contenedor-form-revealed");
+    form.classList.add("contenedor-form-revealed");
     capaOpaca.classList.add("capa-opaca-revealed");
     todoElDocumento.style.overflowY = "hidden";
   });
 
   cruzCierreForm.addEventListener("click", () => {
-    formOculto.classList.remove("contenedor-form-revealed");
+    form.classList.remove("contenedor-form-revealed");
     capaOpaca.classList.remove("capa-opaca-revealed");
     todoElDocumento.style.overflowY = "initial";
   });
