@@ -42,7 +42,7 @@ if (document.querySelector(".contenedor-form")) {
     capaOpaca.classList.add("capa-opaca-revealed");
     todoElDocumento.style.overflowY = "hidden";
   });
-  
+
   cruzCierreForm.addEventListener("click", () => {
     form.classList.remove("contenedor-form-revealed");
     cruzCierreForm.classList.remove("cruz-cierre-form")
@@ -53,21 +53,14 @@ if (document.querySelector(".contenedor-form")) {
 
 // Confirmación envío formulario
 if (document.querySelector(".btn-enviar")) {
-  const btnEnviar = document.querySelectorAll(".btn-enviar");
-  const formulario = document.querySelectorAll(".form-contacto");
+  const btnEnviar = document.querySelector(".btn-enviar");
   const ok = document.querySelector("#ok");
+  const capa = document.querySelector('#capa')
 
-  btnEnviar.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      formulario.forEach((form) => {
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          capa.style.display = "block";
-        });
-      });
-    });
-
-    ok.addEventListener("click", (e) => {
+  btnEnviar.addEventListener("click", (e) => {
+    e.preventDefault();
+    capa.style.display = "block";
+    ok.addEventListener("click", () => {
       capa.style.display = "none";
       document.forms["form-de-contacto"].submit();
     });
